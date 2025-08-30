@@ -20,11 +20,11 @@ export default function EditProfile() {
   } = useForm()
 
   const submitProfileForm = async (data) => {
-    console.log("Profile Form Data - ", data)
+    // console.log("Profile Form Data - ", data)
     try {
       dispatch(updateProfile(token, data))
     } catch (error) {
-      console.log("ERROR MESSAGE - ", error.message)
+      // console.log("ERROR MESSAGE - ", error.message)
     }
   }
   return (
